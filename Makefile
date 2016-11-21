@@ -8,9 +8,9 @@ OBJ_DIR = ./obj
 OBJ_O = $(patsubst %, $(OBJ_DIR)/%, $(OBJ))
 HDIR = include
 LIB = libft/libft.a ft_printf/libftprintf.a
-L_H = -L libft -lft -L ft_printf -lftprintf
+L_H = -L libft -lft -L ft_printf -lftprintf -ltermcap
 FILE = 
-NAME = new_tmp
+NAME = termcaps
 .PHONY: re run rr clean fclean all
 
 all: $(LIB) $(NAME)
